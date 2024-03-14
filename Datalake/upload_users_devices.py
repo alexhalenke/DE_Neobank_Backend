@@ -16,7 +16,7 @@ def upload_to_lake(file_name: str) -> None:
     date_today = datetime.now()
     year = date_today.strftime("%Y")
 
-    blob_path = f"raw/neobank/neobank/{year}/static/{file_name}"
+    blob_path = f"raw/neobank/neobank/{year}/Static/{file_name}"
 
     storage_client = storage.Client()
 
