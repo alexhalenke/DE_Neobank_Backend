@@ -1,18 +1,28 @@
-from upload_users_devices import upload_to_lake
-from datetime import datetime
+from upload_users_devices import upload_to_lake_static, upload_to_lake_dynamic
 import pandas as pd
+import os
 
 def main():
-    date_today = datetime.now().strftime("%Y-%m-%d")
 
-    users = "Data/users.csv"
-    devices = "Data/devices.csv"
-    transactions = "Data/transactions.csv"
-    notificatons = "Data/notifications.csv"
-    upload_to_lake(devices)
-    upload_to_lake(users)
-    upload_to_lake(transactions)
-    upload_to_lake(notificatons)
+    static_files = [
+        "users.csv",
+        "devices.csv"
+    ]
+
+    dynamic_file = [
+        "transactions.csv",
+        "notifications.csv"
+    ]
+
+
+    for file_name in static_files:
+        file_path = os.path.join("Data", file_name)
+        upload_to_lake_static(file_path)
+
+    for file_name in dynamic_file:
+        file_path = os.path.join("Data", file_name)
+        upload_to_lake_dynamic(file_path)
+
 
 if __name__ == "__main__":
     main()
