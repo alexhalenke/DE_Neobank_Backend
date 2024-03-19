@@ -1,4 +1,4 @@
-from upload_users_devices import upload_to_lake_static, upload_to_lake_dynamic
+from de_neobank_backend.datalake.upload_data_datalake import upload_to_lake_static, upload_to_lake_dynamic
 import pandas as pd
 import os
 
@@ -16,11 +16,11 @@ def main():
 
 
     for file_name in static_files:
-        file_path = os.path.join("Data", file_name)
+        file_path = os.path.join("data", file_name)
         upload_to_lake_static(file_path)
 
     for file_name in dynamic_file:
-        file_path = os.path.join("Data", file_name)
+        file_path = os.path.join("data", file_name)
         upload_to_lake_dynamic(file_path)
 
 
