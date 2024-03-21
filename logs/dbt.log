@@ -1,0 +1,29 @@
+[0m19:54:54.964177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a71ee1a7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a71d3b9730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a71d3b9a60>]}
+
+
+============================== 19:54:54.969396 | c46d1822-4fbd-4141-8619-c0efcfab35a7 ==============================
+[0m19:54:54.969396 [info ] [MainThread]: Running with dbt=1.7.10
+[0m19:54:54.970899 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/ahalenke/.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:56:04.608374 [debug] [MainThread]: Starter project path: /home/ahalenke/code/alexhalenke/DataEngineering_FinalProject/DE_Neobank_Backend/.venv/lib/python3.8/site-packages/dbt/include/starter_project
+[0m19:56:04.614889 [info ] [MainThread]: 
+Your new dbt project "dbt_projectNeo" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:56:04.616960 [info ] [MainThread]: Setting up your profile.
+[0m20:00:42.514091 [info ] [MainThread]: Profile dbt_projectNeo written to /home/ahalenke/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m20:00:42.519654 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 347.6387, "process_user_time": 4.573991, "process_kernel_time": 0.351297, "process_mem_max_rss": "148668", "process_in_blocks": "120", "process_out_blocks": "88"}
+[0m20:00:42.522037 [debug] [MainThread]: Command `dbt init` succeeded at 20:00:42.521484 after 347.64 seconds
+[0m20:00:42.523465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a71ee1a7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a7140b9a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a71f612cd0>]}
+[0m20:00:42.525000 [debug] [MainThread]: Flushing usage events
