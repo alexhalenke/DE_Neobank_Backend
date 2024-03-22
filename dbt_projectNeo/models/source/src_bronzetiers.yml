@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: Bronze_Tier
+    database: sylvan-apogee-402010
+    tables:
+      - name: devices
+      - name: notifications
+      - name: users
+      - name: transactions
