@@ -26,7 +26,7 @@ def main():
         print(f"Uploading data for {table_name}")
 
         # Setting filepath to read processed file from
-        bucket_name = "de_project_neobank_bucket"
+        bucket_name = "neobank-bk-lns"
 
         file_path = f"gs://{bucket_name}/raw/neobank/*{table_name}.csv"
         table_id = f"{bq_client.project}.{dataset_name}.{table_name}"
