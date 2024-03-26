@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: device_table
+    description: "Lists users and their devices"
+    columns:
+      - name: device_type
+        tests:
+          - not_null
+      - name: user_id
+        tests:
+          - not_null
+          - unique
+
+  - name: notification_table
+    description: "Notifications received by the user"
+    columns:
+      - name: user_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: user_table
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: transaction_table
+    description: "Transactions performed by users"
+    columns:
+      - name: user_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: transaction_id
+        description: "The ID of the transaction"
+        tests:
+          - unique
+          - not_null

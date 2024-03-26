@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: merchant_dimension
+    description: "Lists users and their devices"
+    columns:
+      - name: merchant_id
+        tests:
+          - not_null
+          - unique
+      - name: merchant_country
+        tests:
+          - not_null
+      - name: merchant_categorization

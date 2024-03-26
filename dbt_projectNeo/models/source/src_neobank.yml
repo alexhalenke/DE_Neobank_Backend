@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: bronze
+    project: lewagon-data-eng
+    tables:
+      - name: devices
+      - name: notifications
+      - name: transactions
+      - name: users
+
+  - name: dbt_iochulo_silver_24032024
+    project: lewagon-data-eng
+    tables:
+      - name: device_table
+      - name: notification_table
+      - name: transaction_table
+      - name: user_table
