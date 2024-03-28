@@ -16,4 +16,4 @@ select
   num_contacts,
   num_referrals,
   num_successful_referrals
-from `Silver_Tier.user_table`
+from  {{ ref( 'users') }}

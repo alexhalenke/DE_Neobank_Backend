@@ -10,6 +10,6 @@ SELECT
   n.datime_with_timezone
 
 
-FROM `Silver_Tier.notification_table` as n
-INNER JOIN `Silver_Tier.device_table` as d
+FROM  {{ ref('notifications') }} as n
+INNER JOIN  {{ ref( 'devices') }} as d
 ON n.user_id = d.user_id

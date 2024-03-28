@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: 03_mart
+    dataset: Gold_Tier
+    tables:
+      - name: customers_age_mart
+      - name: customers_by_device_type_mart
+      - name: unique_customers_mart

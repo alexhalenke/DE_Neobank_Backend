@@ -6,7 +6,8 @@ WITH DateParts AS (
     LPAD(CAST(EXTRACT(MONTH FROM CAST(created_date AS DATE)) AS STRING), 2, '0') AS month,
     LPAD(CAST(EXTRACT(DAY FROM CAST(created_date AS DATE)) AS STRING), 2, '0') AS day
   FROM
-    `Silver_Tier.transaction_table`
+  {{ ref( 'transactions') }}
+
 )
 SELECT
   CAST(CONCAT(year, month, day) AS INTEGER) AS date_ID,
