@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: 03_mart
+    dataset: Gold_Tier
+    tables:
+      - name: moving_avg_trx_mart
+      - name: amt_trx_mart
