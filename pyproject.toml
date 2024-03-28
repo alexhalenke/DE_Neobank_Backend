@@ -11,6 +11,15 @@ google-cloud-storage = "^2.15.0"
 pandas = "^2.0.3"
 google-cloud-bigquery = "^3.19.0"
 dbt-bigquery = "^1.7.6"
+dockerfile = "^3.3.1"
+pendulum = "2.1.2"
+psycopg2-binary = "2.9.3"
+apache-airflow = "2.3.4"
+dbt-core = "^1.7.10"
+apache-airflow-providers-postgres = "4.1.0"
+werkzeug = "2.3.7"
+flask-session = "0.6.0"
+flask = "2.2.5"
 
 
 [build-system]
