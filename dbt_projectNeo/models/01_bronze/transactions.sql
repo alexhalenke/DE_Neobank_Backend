@@ -10,4 +10,4 @@ SELECT
 
 
 FROM
-  `Bronze_Tier.transactions`
+  `sourcefiles.transactions`
