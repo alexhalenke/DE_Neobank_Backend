@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: 01_bronze
-    dataset: Bronze_Tier
+    dataset: sourcefiles
     tables:
       - name: devices
       - name: notifications

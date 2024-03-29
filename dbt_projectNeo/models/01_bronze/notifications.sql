@@ -6,4 +6,4 @@ SELECT
   FORMAT_TIMESTAMP('%Y-%m-%d', TIMESTAMP(created_date)) AS created_date,
   * EXCEPT (created_date, user_id) -- Exclude the columns already transformed
 FROM
-  `Bronze_Tier.notifications`
+  `sourcefiles.notifications`
