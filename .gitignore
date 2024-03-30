@@ -1,2 +1,6 @@
 data/
 .env
+de_neobank_backend/dags/__pycache__/
+logs/dag_id=airflow_code/
+logs/dag_processor_manager/
+logs/scheduler/
