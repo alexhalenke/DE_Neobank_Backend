@@ -1,0 +1,104 @@
+[2024-03-28 18:45:57,450] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: airflow_code.dbt_silver scheduled__2024-03-27T00:00:00+00:00 [queued]>
+[2024-03-28 18:45:57,470] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: airflow_code.dbt_silver scheduled__2024-03-27T00:00:00+00:00 [queued]>
+[2024-03-28 18:45:57,470] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-28 18:45:57,470] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2024-03-28 18:45:57,470] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-28 18:45:57,497] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): dbt_silver> on 2024-03-27 00:00:00+00:00
+[2024-03-28 18:45:57,508] {standard_task_runner.py:52} INFO - Started process 306 to run task
+[2024-03-28 18:45:57,528] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'airflow_code', 'dbt_silver', 'scheduled__2024-03-27T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/airflow_code.py', '--cfg-path', '/tmp/tmpcpkj6rpq', '--error-file', '/tmp/tmp_4v4play']
+[2024-03-28 18:45:57,534] {standard_task_runner.py:80} INFO - Job 2: Subtask dbt_silver
+[2024-03-28 18:45:57,745] {task_command.py:370} INFO - Running <TaskInstance: airflow_code.dbt_silver scheduled__2024-03-27T00:00:00+00:00 [running]> on host 13a1b3e0d20f
+[2024-03-28 18:45:58,742] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=airflow_code
+AIRFLOW_CTX_TASK_ID=dbt_silver
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-27T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-03-27T00:00:00+00:00
+[2024-03-28 18:45:58,743] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2024-03-28 18:45:58,743] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'dbt run --target silver']
+[2024-03-28 18:45:58,783] {subprocess.py:85} INFO - Output:
+[2024-03-28 18:46:08,729] {subprocess.py:92} INFO - [0m18:46:08  Encountered an error:
+[2024-03-28 18:46:08,729] {subprocess.py:92} INFO - Runtime Error
+[2024-03-28 18:46:08,729] {subprocess.py:92} INFO -   fatal: Not a dbt project (or any of the parent directories). Missing dbt_project.yml file
+[2024-03-28 18:46:08,729] {subprocess.py:92} INFO - [0m18:46:08  Traceback (most recent call last):
+[2024-03-28 18:46:08,729] {subprocess.py:92} INFO -   File "/root/.cache/pypoetry/virtualenvs/de-neobank-backend-BsnH11MF-py3.8/lib/python3.8/site-packages/dbt/main.py", line 129, in main
+[2024-03-28 18:46:08,729] {subprocess.py:92} INFO -     results, succeeded = handle_and_check(args)
+[2024-03-28 18:46:08,730] {subprocess.py:92} INFO -   File "/root/.cache/pypoetry/virtualenvs/de-neobank-backend-BsnH11MF-py3.8/lib/python3.8/site-packages/dbt/main.py", line 191, in handle_and_check
+[2024-03-28 18:46:08,730] {subprocess.py:92} INFO -     task, res = run_from_args(parsed)
+[2024-03-28 18:46:08,730] {subprocess.py:92} INFO -   File "/root/.cache/pypoetry/virtualenvs/de-neobank-backend-BsnH11MF-py3.8/lib/python3.8/site-packages/dbt/main.py", line 218, in run_from_args
+[2024-03-28 18:46:08,730] {subprocess.py:92} INFO -     task = parsed.cls.from_args(args=parsed)
+[2024-03-28 18:46:08,730] {subprocess.py:92} INFO -   File "/root/.cache/pypoetry/virtualenvs/de-neobank-backend-BsnH11MF-py3.8/lib/python3.8/site-packages/dbt/task/base.py", line 184, in from_args
+[2024-03-28 18:46:08,730] {subprocess.py:92} INFO -     move_to_nearest_project_dir(args)
+[2024-03-28 18:46:08,730] {subprocess.py:92} INFO -   File "/root/.cache/pypoetry/virtualenvs/de-neobank-backend-BsnH11MF-py3.8/lib/python3.8/site-packages/dbt/task/base.py", line 171, in move_to_nearest_project_dir
+[2024-03-28 18:46:08,730] {subprocess.py:92} INFO -     nearest_project_dir = get_nearest_project_dir(args)
+[2024-03-28 18:46:08,730] {subprocess.py:92} INFO -   File "/root/.cache/pypoetry/virtualenvs/de-neobank-backend-BsnH11MF-py3.8/lib/python3.8/site-packages/dbt/task/base.py", line 164, in get_nearest_project_dir
+[2024-03-28 18:46:08,730] {subprocess.py:92} INFO -     raise dbt.exceptions.RuntimeException(
+[2024-03-28 18:46:08,730] {subprocess.py:92} INFO - dbt.exceptions.RuntimeException: Runtime Error
+[2024-03-28 18:46:08,730] {subprocess.py:92} INFO -   fatal: Not a dbt project (or any of the parent directories). Missing dbt_project.yml file
+[2024-03-28 18:46:08,730] {subprocess.py:92} INFO - 
+[2024-03-28 18:46:08,992] {subprocess.py:96} INFO - Command exited with return code 2
+[2024-03-28 18:46:09,047] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/root/.cache/pypoetry/virtualenvs/de-neobank-backend-BsnH11MF-py3.8/lib/python3.8/site-packages/airflow/operators/bash.py", line 194, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2024-03-28 18:46:09,055] {taskinstance.py:1395} INFO - Marking task as FAILED. dag_id=airflow_code, task_id=dbt_silver, execution_date=20240327T000000, start_date=20240328T184557, end_date=20240328T184609
+[2024-03-28 18:46:09,084] {standard_task_runner.py:92} ERROR - Failed to execute job 2 for task dbt_silver (Bash command failed. The command returned a non-zero exit code 2.; 306)
+[2024-03-28 18:46:09,124] {local_task_job.py:156} INFO - Task exited with return code 1
+[2024-03-28 18:46:09,279] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-28 18:52:47,104] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: airflow_code.dbt_silver scheduled__2024-03-27T00:00:00+00:00 [queued]>
+[2024-03-28 18:52:47,133] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: airflow_code.dbt_silver scheduled__2024-03-27T00:00:00+00:00 [queued]>
+[2024-03-28 18:52:47,133] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-28 18:52:47,134] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2024-03-28 18:52:47,134] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-28 18:52:47,168] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): dbt_silver> on 2024-03-27 00:00:00+00:00
+[2024-03-28 18:52:47,183] {standard_task_runner.py:52} INFO - Started process 388 to run task
+[2024-03-28 18:52:47,198] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'airflow_code', 'dbt_silver', 'scheduled__2024-03-27T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/airflow_code.py', '--cfg-path', '/tmp/tmp7naadg3e', '--error-file', '/tmp/tmpqiyzdzhd']
+[2024-03-28 18:52:47,201] {standard_task_runner.py:80} INFO - Job 3: Subtask dbt_silver
+[2024-03-28 18:52:47,412] {task_command.py:370} INFO - Running <TaskInstance: airflow_code.dbt_silver scheduled__2024-03-27T00:00:00+00:00 [running]> on host 13a1b3e0d20f
+[2024-03-28 18:52:48,252] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=airflow_code
+AIRFLOW_CTX_TASK_ID=dbt_silver
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-27T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-03-27T00:00:00+00:00
+[2024-03-28 18:52:48,257] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2024-03-28 18:52:48,260] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'dbt run --target silver']
+[2024-03-28 18:52:48,325] {subprocess.py:85} INFO - Output:
+[2024-03-28 18:52:55,814] {subprocess.py:92} INFO - [0m18:52:55  Encountered an error:
+[2024-03-28 18:52:55,814] {subprocess.py:92} INFO - Runtime Error
+[2024-03-28 18:52:55,814] {subprocess.py:92} INFO -   fatal: Not a dbt project (or any of the parent directories). Missing dbt_project.yml file
+[2024-03-28 18:52:55,824] {subprocess.py:92} INFO - [0m18:52:55  Traceback (most recent call last):
+[2024-03-28 18:52:55,824] {subprocess.py:92} INFO -   File "/root/.cache/pypoetry/virtualenvs/de-neobank-backend-BsnH11MF-py3.8/lib/python3.8/site-packages/dbt/main.py", line 129, in main
+[2024-03-28 18:52:55,825] {subprocess.py:92} INFO -     results, succeeded = handle_and_check(args)
+[2024-03-28 18:52:55,825] {subprocess.py:92} INFO -   File "/root/.cache/pypoetry/virtualenvs/de-neobank-backend-BsnH11MF-py3.8/lib/python3.8/site-packages/dbt/main.py", line 191, in handle_and_check
+[2024-03-28 18:52:55,825] {subprocess.py:92} INFO -     task, res = run_from_args(parsed)
+[2024-03-28 18:52:55,825] {subprocess.py:92} INFO -   File "/root/.cache/pypoetry/virtualenvs/de-neobank-backend-BsnH11MF-py3.8/lib/python3.8/site-packages/dbt/main.py", line 218, in run_from_args
+[2024-03-28 18:52:55,825] {subprocess.py:92} INFO -     task = parsed.cls.from_args(args=parsed)
+[2024-03-28 18:52:55,825] {subprocess.py:92} INFO -   File "/root/.cache/pypoetry/virtualenvs/de-neobank-backend-BsnH11MF-py3.8/lib/python3.8/site-packages/dbt/task/base.py", line 184, in from_args
+[2024-03-28 18:52:55,825] {subprocess.py:92} INFO -     move_to_nearest_project_dir(args)
+[2024-03-28 18:52:55,825] {subprocess.py:92} INFO -   File "/root/.cache/pypoetry/virtualenvs/de-neobank-backend-BsnH11MF-py3.8/lib/python3.8/site-packages/dbt/task/base.py", line 171, in move_to_nearest_project_dir
+[2024-03-28 18:52:55,825] {subprocess.py:92} INFO -     nearest_project_dir = get_nearest_project_dir(args)
+[2024-03-28 18:52:55,826] {subprocess.py:92} INFO -   File "/root/.cache/pypoetry/virtualenvs/de-neobank-backend-BsnH11MF-py3.8/lib/python3.8/site-packages/dbt/task/base.py", line 164, in get_nearest_project_dir
+[2024-03-28 18:52:55,826] {subprocess.py:92} INFO -     raise dbt.exceptions.RuntimeException(
+[2024-03-28 18:52:55,826] {subprocess.py:92} INFO - dbt.exceptions.RuntimeException: Runtime Error
+[2024-03-28 18:52:55,826] {subprocess.py:92} INFO -   fatal: Not a dbt project (or any of the parent directories). Missing dbt_project.yml file
+[2024-03-28 18:52:55,826] {subprocess.py:92} INFO - 
+[2024-03-28 18:52:56,211] {subprocess.py:96} INFO - Command exited with return code 2
+[2024-03-28 18:52:56,264] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/root/.cache/pypoetry/virtualenvs/de-neobank-backend-BsnH11MF-py3.8/lib/python3.8/site-packages/airflow/operators/bash.py", line 194, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2024-03-28 18:52:56,275] {taskinstance.py:1395} INFO - Marking task as FAILED. dag_id=airflow_code, task_id=dbt_silver, execution_date=20240327T000000, start_date=20240328T185247, end_date=20240328T185256
+[2024-03-28 18:52:56,308] {standard_task_runner.py:92} ERROR - Failed to execute job 3 for task dbt_silver (Bash command failed. The command returned a non-zero exit code 2.; 388)
+[2024-03-28 18:52:56,341] {local_task_job.py:156} INFO - Task exited with return code 1
+[2024-03-28 18:52:56,507] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

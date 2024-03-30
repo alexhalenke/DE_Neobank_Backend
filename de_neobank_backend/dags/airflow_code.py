@@ -11,7 +11,7 @@ DBT_DIR = os.getenv("DBT_DIR")
 
 
 with DAG(
-    "dbt_basics",
+    "airflow_code",
     default_args={
         "depends_on_past": True,
     },
@@ -19,7 +19,14 @@ with DAG(
     schedule_interval="@daily",
     catchup=False,
 ) as dag:
-    dbt_run = BashOperator(
-        task_id="dbt_run",
-        bash_command=f"dbt run --project-dir {DBT_DIR}",
+    dbt_silver = BashOperator(
+        task_id="dbt_silver",
+        bash_command=f"dbt run --target silver",
     )
+
+    dbt_gold = BashOperator(
+        task_id="dbt_gold",
+        bash_command=f"dbt run --target gold",
+    )
+
+    dbt_silver >> dbt_gold
