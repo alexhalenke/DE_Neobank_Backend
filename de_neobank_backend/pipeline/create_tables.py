@@ -1,13 +1,13 @@
 from de_neobank_backend.pipeline.schemas import bigquery_schemas
 from google.cloud import bigquery
-
+import os
 
 def main():
     """
     Main function to take the bigquery schemas and create the tables in the raw dataset.
     """
     client = bigquery.Client()
-    dataset_name = "sourcefiles"
+    dataset_name = os.environ["DATASET"]
 
     dataset_ref = client.dataset(dataset_name)
 
