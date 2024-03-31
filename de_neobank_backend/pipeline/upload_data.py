@@ -18,7 +18,7 @@ def main():
     bq_client = bigquery.Client()
     gcs_client = storage.Client()
 
-    dataset_name = "Bronze_Tier"
+    dataset_name = "sourcefiles"
 
     # updated_schemas = rename_type_to_field_type(bigquery_schemas)
 

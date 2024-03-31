@@ -33,5 +33,14 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_projectNeo:
     # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    01_bronze:
+      +schema: Bronze_Tier
+      +materialized: table
+
+    02_silver:
+      +schema: Silver_Tier
+      +materialized: table
+
+    03_mart:
+        +schema: Gold_Tier
+        +materialized: view

@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: 01_bronze
+    dataset: sourcefiles
+    tables:
+      - name: devices
+      - name: notifications
+      - name: users
+      - name: transactions

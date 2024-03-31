@@ -16,4 +16,4 @@ select
   num_contacts,
   num_referrals,
   num_successful_referrals
-from `dbt_alexhalenke_silver_23032024.user_table`
+from  {{ ref( 'users') }}

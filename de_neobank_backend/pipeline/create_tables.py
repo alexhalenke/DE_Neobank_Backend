@@ -7,7 +7,7 @@ def main():
     Main function to take the bigquery schemas and create the tables in the raw dataset.
     """
     client = bigquery.Client()
-    dataset_name = "Bronze_Tier"
+    dataset_name = "sourcefiles"
 
     dataset_ref = client.dataset(dataset_name)
 

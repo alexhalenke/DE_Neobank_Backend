@@ -72,3 +72,63 @@ Runtime Error
 [0m18:43:38.783408 [debug] [MainThread]: Command `dbt run` failed at 18:43:38.782995 after 0.09 seconds
 [0m18:43:38.784608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfa0da5a7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfa0e220df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfa0e220cd0>]}
 [0m18:43:38.785585 [debug] [MainThread]: Flushing usage events
+[0m22:06:19.945276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x759b0086be50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x759afed6dc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x759afed6da90>]}
+
+
+============================== 22:06:19.957549 | aaa64df8-2f1b-4979-8a86-fbe6a5b908b5 ==============================
+[0m22:06:19.957549 [info ] [MainThread]: Running with dbt=1.7.10
+[0m22:06:19.959456 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/home/luiggi.navilys/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt retry', 'send_anonymous_usage_stats': 'True'}
+[0m22:06:19.961215 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/luiggi.navilys/code/skywalkerlulu971/data-engineering-challenges/05-Projects/01-Project-Kickoff/DE_Neobank_Backend/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:06:19.964557 [debug] [MainThread]: Resource report: {"command_name": "retry", "command_wall_clock_time": 0.1668056, "process_user_time": 5.093384, "process_kernel_time": 0.245991, "process_mem_max_rss": "87764", "process_in_blocks": "35920", "process_out_blocks": "8", "command_success": false}
+[0m22:06:19.966360 [debug] [MainThread]: Command `dbt retry` failed at 22:06:19.965875 after 0.17 seconds
+[0m22:06:19.967655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x759b0086be50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x759afff49100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x759afed6dc10>]}
+[0m22:06:19.969028 [debug] [MainThread]: Flushing usage events
+[0m22:06:44.955515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d209fa61bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d209df959a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d209df95eb0>]}
+
+
+============================== 22:06:44.960411 | e9dfb007-48c9-41b6-bef2-f71d044fe8b6 ==============================
+[0m22:06:44.960411 [info ] [MainThread]: Running with dbt=1.7.10
+[0m22:06:44.961559 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/home/luiggi.navilys/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:06:44.962623 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/luiggi.navilys/code/skywalkerlulu971/data-engineering-challenges/05-Projects/01-Project-Kickoff/DE_Neobank_Backend/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:06:44.964229 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.08976896, "process_user_time": 3.734364, "process_kernel_time": 0.204252, "process_mem_max_rss": "87768", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m22:06:44.965388 [debug] [MainThread]: Command `dbt run` failed at 22:06:44.965088 after 0.09 seconds
+[0m22:06:44.966206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d209fa61bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d209df959a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d209df95310>]}
+[0m22:06:44.967107 [debug] [MainThread]: Flushing usage events
+[0m22:07:07.063960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7025fbe21bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7025fa3339a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7025fa333eb0>]}
+
+
+============================== 22:07:07.071709 | 1b57b2f3-1aa7-4af8-94e2-6217410d66db ==============================
+[0m22:07:07.071709 [info ] [MainThread]: Running with dbt=1.7.10
+[0m22:07:07.073475 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/luiggi.navilys/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:07:07.074565 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/luiggi.navilys/code/skywalkerlulu971/data-engineering-challenges/05-Projects/01-Project-Kickoff/DE_Neobank_Backend/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:07:07.076347 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.15107498, "process_user_time": 3.741583, "process_kernel_time": 0.17606, "process_mem_max_rss": "87640", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m22:07:07.077722 [debug] [MainThread]: Command `dbt run` failed at 22:07:07.077268 after 0.15 seconds
+[0m22:07:07.078972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7025fbe21bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7025fa3339a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7025fa333310>]}
+[0m22:07:07.080345 [debug] [MainThread]: Flushing usage events
+[0m18:21:41.336510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78cab2b6abb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78cab1073970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78cab1073e80>]}
+
+
+============================== 18:21:41.344694 | 3156b38e-01e6-4d7e-bb5f-bc3e5caa3f03 ==============================
+[0m18:21:41.344694 [info ] [MainThread]: Running with dbt=1.7.10
+[0m18:21:41.346419 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/luiggi.navilys/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:21:41.347690 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/luiggi.navilys/code/skywalkerlulu971/data-engineering-challenges/05-Projects/01-Project-Kickoff/DE_Neobank_Backend/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:21:41.352010 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.10605849, "process_user_time": 3.784165, "process_kernel_time": 0.258058, "process_mem_max_rss": "87628", "process_in_blocks": "32528", "process_out_blocks": "8", "command_success": false}
+[0m18:21:41.355112 [debug] [MainThread]: Command `dbt run` failed at 18:21:41.354595 after 0.11 seconds
+[0m18:21:41.356117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78cab2b6abb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78cab1073970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78cab10732e0>]}
+[0m18:21:41.357037 [debug] [MainThread]: Flushing usage events
