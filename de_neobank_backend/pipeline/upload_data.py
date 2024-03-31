@@ -1,6 +1,7 @@
 from google.cloud import bigquery
 from google.cloud import storage
 from de_neobank_backend.pipeline.schemas import bigquery_schemas
+import os
 
 """
 def rename_type_to_field_type(schema_dict):
@@ -18,7 +19,7 @@ def main():
     bq_client = bigquery.Client()
     gcs_client = storage.Client()
 
-    dataset_name = "sourcefiles"
+    dataset_name = os.environ["DATASET"]
 
     # updated_schemas = rename_type_to_field_type(bigquery_schemas)
 
@@ -26,7 +27,7 @@ def main():
         print(f"Uploading data for {table_name}")
 
         # Setting filepath to read processed file from
-        bucket_name = "neobank-bk-lns"
+        bucket_name = os.environ["LAKE_BUCKET"]
 
         file_path = f"gs://{bucket_name}/raw/neobank/*{table_name}.csv"
         table_id = f"{bq_client.project}.{dataset_name}.{table_name}"
