@@ -19,5 +19,5 @@ RUN chmod +x scripts/entrypoint.sh
 #COPY pyproject.toml poetry.lock ./
 
 RUN pip3 install --upgrade --no-cache-dir pip \
-    && pip3 install apache-airflow dbt-core psycopg2-binary
+    && pip3 install apache-airflow dbt-core psycopg2-binary dbt-bigquery
     #&& poetry install --only main

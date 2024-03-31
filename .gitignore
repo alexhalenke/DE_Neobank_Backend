@@ -2,3 +2,9 @@ data/
 .env
 database/
 logs/
+airflow.cfg
+airflow.db
+webserver_config.py
+*.json
+!**/.gitkeep
+!manifest.json

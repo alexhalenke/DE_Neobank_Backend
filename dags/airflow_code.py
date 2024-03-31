@@ -19,14 +19,7 @@ with DAG(
     schedule_interval="@daily",
     catchup=False,
 ) as dag:
-    dbt_silver = BashOperator(
-        task_id="dbt_silver",
-        bash_command=f"dbt run --target silver",
+    dbt_run = BashOperator(
+        task_id="dbt_run",
+        bash_command=f"dbt run --project-dir {DBT_DIR}",
     )
-
-    dbt_gold = BashOperator(
-        task_id="dbt_gold",
-        bash_command=f"dbt run --target gold",
-    )
-
-    dbt_silver >> dbt_gold
