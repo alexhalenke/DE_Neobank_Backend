@@ -2267,3 +2267,57 @@ File Path                          PID    Runtime      # DAGs    # Errors  Last 
 /app/airflow/dags/airflow_code.py                           1           0  0.24s           2024-03-31T23:39:02
 ================================================================================
 [2024-03-31T23:39:35.172+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2024-04-02T18:01:43.286+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2024-04-02T18:01:43.290+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2024-04-02T18:01:43.291+0000] {manager.py:471} INFO - Checking for new files in /app/airflow/dags every 300 seconds
+[2024-04-02T18:01:43.293+0000] {manager.py:738} INFO - Searching for files in /app/airflow/dags
+[2024-04-02T18:01:43.297+0000] {manager.py:741} INFO - There are 1 files in /app/airflow/dags
+[2024-04-02T18:01:43.390+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/app/airflow/dags/airflow_code.py    150  0.04s             0           0
+================================================================================
+[2024-04-02T18:02:13.510+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/app/airflow/dags/airflow_code.py                           1           0  0.30s           2024-04-02T18:01:43
+================================================================================
+[2024-04-02T18:02:43.882+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/app/airflow/dags/airflow_code.py                           1           0  0.14s           2024-04-02T18:02:13
+================================================================================
+[2024-04-02T18:03:14.120+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/app/airflow/dags/airflow_code.py                           1           0  0.15s           2024-04-02T18:02:44
+================================================================================
+[2024-04-02T18:03:44.361+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/app/airflow/dags/airflow_code.py                           1           0  0.14s           2024-04-02T18:03:14
+================================================================================
+[2024-04-02T18:04:14.604+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/app/airflow/dags/airflow_code.py                           1           0  0.14s           2024-04-02T18:03:44
+================================================================================
+[2024-04-02T18:04:40.975+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
