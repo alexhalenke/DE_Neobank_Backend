@@ -1,11 +1,13 @@
 
  -- total transactions over years by type of transaction
 
- SELECT
+  SELECT
 
   sum(t.amount_usd) as total_amount,
   d.year,
-  t.transactions_type
+  t.transactions_type,
+  t.direction,
+  d.month
 
 
  FROM  {{ ref('transactions_facts') }} as t
