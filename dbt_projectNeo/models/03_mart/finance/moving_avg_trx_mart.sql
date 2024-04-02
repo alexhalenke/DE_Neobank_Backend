@@ -22,6 +22,7 @@ SELECT
 select
   a.year,
   a.month,
+  a.direction,
 
  AVG(total_amount) OVER (ORDER BY a.year,a.month ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS moving_avg
  from agg_amount_by_month a
