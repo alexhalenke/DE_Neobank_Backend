@@ -6,6 +6,7 @@
 SELECT
 
   sum(t.amount_usd) as total_amount,
+  t.direction,
   d.year,
   d.month
 
@@ -13,7 +14,7 @@ SELECT
  FROM {{ ref('transactions_facts') }} as t
  left join {{ ref( 'date_dim') }}  as d
  on CAST(FORMAT_DATE('%Y%m%d', cast(t.created_date as date)) AS INT64) = d.date_ID
- group by d.year, d.month
+ group by d.year, d.month, t.direction
 
 
  )
