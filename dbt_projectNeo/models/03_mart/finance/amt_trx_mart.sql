@@ -1,7 +1,7 @@
 
  -- total transactions over years by type of transaction
 
- SELECT
+  SELECT
 
   sum(t.amount_usd) as total_amount,
   d.year,
