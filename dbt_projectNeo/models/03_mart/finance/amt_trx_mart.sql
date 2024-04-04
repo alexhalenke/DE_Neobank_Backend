@@ -1,11 +1,12 @@
 
- -- total transactions over years by type of transaction
+-- total transactions over years by type of transaction
 
   SELECT
 
   sum(t.amount_usd) as total_amount,
   d.year,
   t.transactions_type,
+    case when t.transactions_type="FEE" then "FEE" else  "OTHER TRX" end as  transaction_group,
   t.direction,
   d.month
 
