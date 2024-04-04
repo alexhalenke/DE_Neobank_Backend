@@ -15,11 +15,11 @@ with DAG(
     default_args={
         "depends_on_past": True,
     },
-    start_date=pendulum.today("UTC").add(days=-1),
+    start_date=pendulum.today("UTC").add(days=-2),
     schedule_interval="@daily",
     catchup=False,
 ) as dag:
     dbt_run = BashOperator(
         task_id="dbt_run",
-        bash_command=f"dbt run --project-dir {DBT_DIR}",
+        bash_command=f"dbt run --project-dir {DBT_DIR} --target dev",
     )
