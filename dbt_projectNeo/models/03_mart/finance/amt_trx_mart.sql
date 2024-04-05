@@ -8,7 +8,8 @@
   t.transactions_type,
     case when t.transactions_type="FEE" then "FEE" else  "OTHER TRX" end as  transaction_group,
   t.direction,
-  d.month
+  d.month,
+  t.transactions_state
 
 
  FROM  {{ ref('transactions_facts') }} as t
@@ -18,4 +19,5 @@
   d.year,
   t.transactions_type,
   t.direction,
-  d.month
+  d.month,
+  t.transactions_state
