@@ -147,3 +147,18 @@ Runtime Error
 [0m22:21:18.269690 [debug] [MainThread]: Command `dbt run` failed at 22:21:18.269402 after 0.08 seconds
 [0m22:21:18.270514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77104108a860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77103f52eaa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77103f52e9b0>]}
 [0m22:21:18.271353 [debug] [MainThread]: Flushing usage events
+[0m18:45:11.527582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7807ba93fb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7807b8ad5a80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7807b8ad5f60>]}
+
+
+============================== 18:45:11.534041 | f7d18554-09f8-48e7-8e34-8ea1e58e9be4 ==============================
+[0m18:45:11.534041 [info ] [MainThread]: Running with dbt=1.7.11
+[0m18:45:11.535436 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/home/ahalenke/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:45:11.536438 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/ahalenke/code/alexhalenke/DataEngineering_FinalProject/DE_Neobank_Backend/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:45:11.540191 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.07963472, "process_user_time": 2.844833, "process_kernel_time": 0.168581, "process_mem_max_rss": "91600", "process_in_blocks": "42240", "process_out_blocks": "16", "command_success": false}
+[0m18:45:11.541891 [debug] [MainThread]: Command `dbt run` failed at 18:45:11.541527 after 0.08 seconds
+[0m18:45:11.542940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7807ba93fb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7807b8ad7f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7807b8ad43a0>]}
+[0m18:45:11.543819 [debug] [MainThread]: Flushing usage events
