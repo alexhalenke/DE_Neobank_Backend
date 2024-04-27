@@ -5,6 +5,7 @@
 - [Installation]
 - [Usage]
 - [Features]
+- [Future improvements]
 - [Code Example]
 - [Credits]
   
@@ -15,9 +16,9 @@ A neobank gathered data of 2.7 million transactions. In this project we create a
 The engineering challenges are the following: 
   - Extracting the data from the different data sources (csv files)
   - Storing the data in data warehouse
-  - Data modelling according to the business requirements
+  - Data modelling according to business requirements
   - Connecting to an interactive Dashboard 
-  - Connecting a LLM to the database
+  - Connecting a LLM to the datawarehouse
   - Making the process scalable and auto scheduled
 
 
@@ -41,12 +42,24 @@ How to use your project:
 - Feature 3
 
 
+## Future improvements 
+  - inject .env with docker compose (https://docs.docker.com/compose/environment-variables/set-environment-variables/)
+  - Own usage of OpenAI key
+  - Terraform
+  - CloudSQL
+  - Orchestration of extract and load process
+  - CI/CD pipeline
+  - Build an API with different endpoints that trigger different dbt commands (https://medium.com/@ivan_toriya/step-by-step-guide-to-run-dbt-in-production-with-google-cloud-platform-fb1f035f3c7b)
+    
+
 ## Credits  
 Following persons have contributed to this project:
 
-Contributor 1
-Contributor 2
-Third-party libraries or plugins used
+Enrico Dainelli
+Ikechi Ochulo
+Luiggi Navilys
+Marlin Akhter
+Alexander Halenke
 
 
 ## Code Example
