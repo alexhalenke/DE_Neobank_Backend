@@ -1,36 +1,45 @@
-# Project Title
+# Transactions ELT Pipeline for a Neobank
 
-One paragraph that describes your project and what it does.
+## Table of Contents
+- [Project Goal]
+- [Installation]
+- [Usage]
+- [Features]
+- [Code Example]
+- [Credits]
+  
+  
+## Project Goal
 
-## Table of Contents (Optional)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Contributing](#contributing)
-- [Code Example](#code-example)
-- [License](#license)
-- [Credits](#credits)
-- [Contact](#contact)
+A neobank gathered data of 2.7 million transactions. In this project we create a ELT pipeline for the data to enable the use of data analytics and visualization. 
+The engineering challenges are the following: 
+  - Extracting the data from the different data sources (csv files)
+  - Storing the data in data warehouse
+  - Data modelling according to the business requirements
+  - Connecting to an interactive Dashboard 
+  - Connecting a LLM to the database
+  - Making the process scalable and auto scheduled
+
 
 ## Installation
 
 Steps to install your project:
-1. Step 1
-2. Step 2
-3. Step 3
+  - Step 1:
+  - Step 2:
+  - Step 3: 
+   
 
 ## Usage
 
 How to use your project:
+
+
 ## Features
 
 - Feature 1
 - Feature 2
 - Feature 3
 
-## Contributing
-
-If you would like to contribute, please follow these [guidelines](/PATH/TO/CONTRIBUTING.md).
 
 ## Code Example
 
@@ -38,8 +47,8 @@ Provide a code sample that demonstrates a key functionality of your project:
 ```[programming-language]
 code block here
 
-Credits
-Acknowledge those who have contributed to the project:
+## Credits  
+Following persons have contributed to this project:
 
 Contributor 1
 Contributor 2
