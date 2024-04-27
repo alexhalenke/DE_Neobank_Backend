@@ -41,15 +41,16 @@ How to use your project:
 - Feature 3
 
 
-## Code Example
-
-Provide a code sample that demonstrates a key functionality of your project:
-```[programming-language]
-code block here
-
 ## Credits  
 Following persons have contributed to this project:
 
 Contributor 1
 Contributor 2
 Third-party libraries or plugins used
+
+
+## Code Example
+
+Provide a code sample that demonstrates a key functionality of your project:
+```[programming-language]
+code block here
