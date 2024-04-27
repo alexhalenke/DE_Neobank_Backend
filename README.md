@@ -56,12 +56,11 @@ How to use your project:
 
 ## Credits  
 Following persons have contributed to this project:
-
-Enrico Dainelli
-Ikechi Ochulo
-Luiggi Navilys
-Marlin Akhter
-Alexander Halenke
+  - Enrico Dainelli
+  - Ikechi Ochulo
+  - Luiggi Navilys
+  - Marlin Akhter
+  - Alexander Halenke
 
 
 ## Code Example
