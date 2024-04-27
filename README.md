@@ -26,7 +26,8 @@ The engineering challenges are the following:
 
 ## Set Up and Installation
 
-Steps to install your project:
+Steps to set up and install the project:
+  Backend
   - git clone the project
   - "poetry install"
   - create a .env file with: LAKE_BUCKET, POSTGRES_PASSWORD, DATASET, GCP_LOCATION, GCP_PROJECT_ID
@@ -36,6 +37,14 @@ Steps to install your project:
   - "python de_neobank_backend/pipeline/upload_data.py" for uploading into the dataset
   - go into dbt folder and run "dbt run --target prod
   - "docker compose up --build" for airflow
+  Frontend
+  - git clone the project
+  - "poetry install"
+  - Set up .gcp_keys and .streamlit keys
+  - "docker compose up --build" for accessing streamlit
+  - Open the port 8501 and try out dashboard
+  - With own OPENAI_API_KEY you can ask questions to the data
+    
    
 
 ## Usage
