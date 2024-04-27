@@ -45,13 +45,7 @@ How to use your project:
 
 ![Neo Bank](https://github.com/alexhalenke/DE_Neobank_Backend/assets/109359407/e7967894-8103-4b58-a960-b8af83acca6e)
 Technologies used: 
-  - GCP
-  - BigQuery
-  - dbt
-  - Airflow
-  - Docker
-  - Streamllit
-  - OpenAI
+  - GCP, BigQuery, dbt, Airflow, Docker, Streamllit, OpenAI
 
 
 ## Future improvements 
