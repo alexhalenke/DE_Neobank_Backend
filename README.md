@@ -3,7 +3,7 @@
 
 ## Table of Contents
 - [Project Goal]
-- [Installation]
+- [Set Up and Installation]
 - [Usage]
 - [Features]
 - [Future improvements]
@@ -16,19 +16,22 @@
 A neobank gathered data of 2.7 million transactions. In this project we create a ELT pipeline for the data to enable the use of data analytics and visualization. 
 The engineering challenges are the following: 
   - Extracting the data from the different data sources (csv files)
-  - Storing the data in data warehouse
+  - Storing the data in a datalake and a data warehouse
   - Data modelling according to business requirements
   - Connecting to an interactive Dashboard 
   - Connecting a LLM to the datawarehouse
   - Making the process scalable and auto scheduled
 
 
-## Installation
+## Set Up and Installation
 
 Steps to install your project:
-  - Step 1:
-  - Step 2:
-  - Step 3: 
+  - git clone the project
+  - create a .env file with: LAKE_BUCKET, POSTGRES_PASSWORD, DATASET, GCP_LOCATION, GCP_PROJECT_ID
+  - create a datalake bucket to store data
+  - "python de_neobank_backend/datalake/main_datalake.py" for uploading data into bucket
+  - "python de_neobank_backend/pipeline/create_tables.py" for creating a dataset
+  - "python de_neobank_backend/pipeline/upload_data.py" for uploading into the dataset
    
 
 ## Usage
@@ -39,9 +42,14 @@ How to use your project:
 ## Features
 
 ![Neo Bank](https://github.com/alexhalenke/DE_Neobank_Backend/assets/109359407/e7967894-8103-4b58-a960-b8af83acca6e)
-- Feature 1
-- Feature 2
-- Feature 3
+Technologies used: 
+  - GCP
+  - BigQuery
+  - dbt
+  - Airflow
+  - Docker
+  - Streamllit
+  - OpenAI
 
 
 ## Future improvements 
@@ -63,8 +71,6 @@ Following persons have contributed to this project:
   - Alexander Halenke
 
 
-## Code Example
+## User Interface
 
-Provide a code sample that demonstrates a key functionality of your project:
-```[programming-language]
-code block here
+
