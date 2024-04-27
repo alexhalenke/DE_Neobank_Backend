@@ -17,7 +17,8 @@ A neobank gathered data of 2.7 million transactions. In this project we create a
 The engineering challenges are the following: 
   - Extracting the data from the different data sources (csv files)
   - Storing the data in a datalake and a data warehouse
-  - Data modelling according to business requirements
+  - Data modelling according to business requirements: This has been done with dbt through the creation of different layers (Bronze, Silver & Gold)
+  - Orchestrate the transformations with Airflow
   - Connecting to an interactive Dashboard 
   - Connecting a LLM to the datawarehouse
   - Making the process scalable and auto scheduled
@@ -32,6 +33,7 @@ Steps to install your project:
   - "python de_neobank_backend/datalake/main_datalake.py" for uploading data into bucket
   - "python de_neobank_backend/pipeline/create_tables.py" for creating a dataset
   - "python de_neobank_backend/pipeline/upload_data.py" for uploading into the dataset
+  - go into dbt folder and run "dbt run --target prod
    
 
 ## Usage
