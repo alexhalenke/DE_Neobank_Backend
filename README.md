@@ -1,15 +1,6 @@
 # Transactions ELT Pipeline for a Neobank
 (This is the backend of our project. For accessing the frontend https://github.com/alexhalenke/DE_Neobank_Frontend)
 
-## Table of Contents
-- [Project Goal]
-- [Set Up and Installation]
-- [Usage]
-- [Features]
-- [Future improvements]
-- [Code Example]
-- [Credits]
-  
   
 ## Project Goal
 
@@ -45,12 +36,6 @@ Steps to set up and install the project:
   - Open the port 8501 and try out dashboard
   - With own OPENAI_API_KEY you can ask questions to the data
     
-   
-
-## Usage
-
-How to use your project:
-
 
 ## Features
 
@@ -59,7 +44,18 @@ Technologies used:
   - GCP, BigQuery, dbt, Airflow, Docker, Streamllit, OpenAI
 
 
+## Usage
+
+How to use your project:
+The deliverable of this project is a dashboard on streamlit. There are different filters that can be used. Here a screenshot of the dashboard:
+![Screenshot 2024-04-27 213852](https://github.com/alexhalenke/DE_Neobank_Backend/assets/109359407/763f50f1-41f0-4d85-8bc5-0e5ae693d7aa)
+In the dashboard there are 3 different parts. The marketing team, finance team and a space to ask questions to an LLM.
+In the following image you can see the LLM part: 
+![Screenshot 2024-04-27 220225](https://github.com/alexhalenke/DE_Neobank_Backend/assets/109359407/b105bf0f-009f-417e-838b-e98facfd1c88)
+
+
 ## Future improvements 
+In the next weeks we are going to iteratively improve the project, implementing the following features:
   - inject .env with docker compose (https://docs.docker.com/compose/environment-variables/set-environment-variables/)
   - Own usage of OpenAI key
   - Terraform
@@ -76,8 +72,3 @@ Following persons have contributed to this project:
   - Luiggi Navilys
   - Marlin Akhter
   - Alexander Halenke
-
-
-## User Interface
-
-
